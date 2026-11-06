@@ -21,6 +21,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
@@ -49,7 +50,7 @@ fun FormSiswa(
         topBar = {
             TopAppBar(
                 title = { Text(stringResource(id = R.string.app_name), color = Color.White) },
-                colors = TopAppBarDefaults.mediumTopAppBarColors(containerColor = colorResource(id = R.color.purple_500))
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = colorResource(id = R.color.purple_500))
             )
         }
     ) { isiRuang ->
