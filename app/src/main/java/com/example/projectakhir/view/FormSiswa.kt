@@ -26,5 +26,12 @@ modifier: Modifier = Modifier)
     var txtGender by remember { mutableStateOf("")}
     val listData: MutableList<String> = mutableListOf(txtNama, txtAlamat, txtGender)
 
-
+    Scaffold(modifier = Modifier,
+        { TopAppBar(title = { Text(stringResource(R.string.app_name), color = Color.White)},
+            colors = TopAppBarDefaults.mediumTopAppBarColors(colorResource(R.color.purple_500))
+        )
+        }) { isiRuang ->
+        Column() { }
+    }
+}
 
