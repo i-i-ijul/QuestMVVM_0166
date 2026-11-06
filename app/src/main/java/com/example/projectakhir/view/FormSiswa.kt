@@ -24,5 +24,7 @@ modifier: Modifier = Modifier)
     var txtNama by rememberSaveable { mutableStateOf("")}
     var txtAlamat by remember { mutableStateOf("")}
     var txtGender by remember { mutableStateOf("")}
+    val listData: MutableList<String> = mutableListOf(txtNama, txtAlamat, txtGender)
+
 
 
